@@ -21,24 +21,24 @@
             width: 80%;
             text-align: center;
         }
+
+        p {
+            font-size: 1.5em;
+            line-height: 30px;
+        }
+
+        a {
+            text-decoration: underline;
+            font-style: italic;
+            color: black;
+        }
     </style>
 </head>
 
 <body>
     <div>
         <h1>A Month of Changing Weather</h1>
-        <style>
-            p {
-                font-size: 1.5em;
-                line-height: 30px;
-            }
-
-            a {
-                text-decoration: underline;
-                font-style: italic;
-                color: black;
-            }
-        </style>
+        
         <?php
         $weather = ['rain', 'sunshine', 'clouds', 'hail', 'sleet', 'snow', 'wind'];
 
