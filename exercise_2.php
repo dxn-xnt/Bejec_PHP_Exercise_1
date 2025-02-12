@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP Exercise 1</title>
+    <title>PHP Exercise 2</title>
     <style>
         html,
         body {
