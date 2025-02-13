@@ -24,3 +24,13 @@ a {
     font-style: italic;
     color: black;
 }
+
+h4 {
+    text-align: center;
+    width: 80%;
+    position: absolute;
+    margin: 0;
+    bottom: 5%;
+    opacity: 40%;
+    color: blue;
+}
