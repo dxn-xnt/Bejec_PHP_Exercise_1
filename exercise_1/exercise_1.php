@@ -28,14 +28,7 @@
         echo "<style>body { background-color: #$color; }</style>";
         ?>
 
-        <h4 style="text-align: center;
-        width: 80%;
-        position: absolute;
-        margin: 0;
-        bottom: 5%;
-        opacity: 40%; 
-        color: blue;
-        ">
+        <h4>
             click the weather element to change the background color
         </h4>
     </div>
