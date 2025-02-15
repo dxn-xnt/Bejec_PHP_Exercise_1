@@ -11,27 +11,31 @@
 <body>
     <div>
         <?php
-        $cities = ['Tokyo', 'Mexico City', 'New York City', 'Mumbai', 'Seoul', 'Shanghai', 'Lagos', 'Buenos Aires', 'Cairo', 'London'];
+        function printCities($cities, $ifSorted)
+        {
+            if ($ifSorted) {
+                sort($cities);
+                foreach ($cities as $city) echo "<li>$city</li>";
+            } else {
+                foreach ($cities as $city) echo "$city,  ";
+            }
+        }
 
-        $sortedCities = $cities;
-        sort($sortedCities);
+        $cities = ['Tokyo', 'Mexico City', 'New York City', 'Mumbai', 'Seoul', 'Shanghai', 'Lagos', 'Buenos Aires', 'Cairo', 'London'];
 
         $updatedCities = $cities;
         array_push($updatedCities, 'Los Angeles', 'Calcutta', 'Osaka', 'Beijing');
 
-        $sortedNewCities = $updatedCities;
-        sort($sortedNewCities);
-
         echo "<div class=\"city-list\">
                 <h1>Largest Cities</h1><br> 
                 <p>";
-        foreach ($cities as $city) echo "$city,  ";
+        printCities($cities, false);
         echo "</p>
             </div>
             <div class=\"city-list\">
                 <h1>Sorted List</h1><br>
                 <ul>";
-        foreach ($sortedCities as $city) echo "<li>$city</li>";
+        printCities($cities, true);
         echo "</ul>
             </div>
             <div>
@@ -41,7 +45,7 @@
             <div class=\"city-list\">
                 <h1>Sorted List with New Added Cities</h1><br> 
                 <ul>";
-        foreach ($sortedNewCities as $city) echo "<li>$city</li>";
+        printCities($updatedCities, true);
         echo "</ul></div>";
         ?>
 
